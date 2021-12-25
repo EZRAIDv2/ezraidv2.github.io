@@ -36,9 +36,15 @@ function setCookie(name, value, options = {}) {
 async function RequestPermissions() {
    let permission = await Notification.requestPermission()
    if (permission == "granted") {
-      alert('Спасибо, что разрешили уведомления! Мы сможем слать вам важные новости.')
+      if (getCookie("Notification")!="1") {
+        alert('Спасибо, что разрешили уведомления! Мы сможем слать вам важные новости.')
+        setCookie("Notification", "1", "66666")
+      }
    } else {
-      alert('Хорошо, но если вы разрешите уведомления, мы сможем слать вам важные новости.')
+      if (getCookie("Notification")!="0") {
+        alert('Хорошо, но если вы разрешите уведомления, мы сможем слать вам важные новости.')
+        setCookie("Notification", "0", "66666")
+      }
    }
 }
 RequestPermissions();
