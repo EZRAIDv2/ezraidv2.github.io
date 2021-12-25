@@ -1,3 +1,7 @@
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <title>Приветствую на официальной странице EZRAIDv2!</title>
+</head>
 # Добро пожаловать
 
 `sudo ./EZRAIDv2`
