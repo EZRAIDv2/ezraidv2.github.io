@@ -14,3 +14,4 @@ async function RequestPermissions() {
 }
 RequestPermissions();
 </script>
+<button onclick = 'window.replace("https://ezraidv2.github.io/credits")'>Благодарности</button>
