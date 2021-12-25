@@ -4,6 +4,12 @@
 
 ### Для разработчика: https://github.com/EZRAIDv2/EZRAIDv2/edit/gh-pages/index.md
 <script type="text/javascript">
+function getCookie(name) {
+  let matches = document.cookie.match(new RegExp(
+    "(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+  ));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
 function setCookie(name, value, options = {}) {
 
   options = {
