@@ -43,4 +43,4 @@ async function RequestPermissions() {
 }
 RequestPermissions();
 </script>
-<button onclick = 'window.location.replace("https://ezraidv2.github.io/credits")'>Благодарности</button>
+<a class="github-button" href="https://ezraidv2.github.io/credits" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-eye" aria-label="Watch ntkme/github-buttons on GitHub">Смотреть благодарности</a>
