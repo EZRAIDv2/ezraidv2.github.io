@@ -31,8 +31,8 @@ function deleteCookie(name) {
     'max-age': -1
   })
 }
-function maxAgeCookie(name) {
-  setCookie(name, "", {
+function maxAgeCookie(name, value) {
+  setCookie(name, value, {
     'max-age': 99999999999
   })
 }
@@ -40,8 +40,9 @@ var session_id_exists = getCookie('session_id');
 if (session_id_exists != null) {
   void(0)
 } else {
-  document.cookie = "session_id="+ID();
-  maxAgeCookie('session_id')
+  var ID_GENERATE = ID()
+  document.cookie = "session_id="+ID_GENERATE;
+  maxAgeCookie('session_id', ID_GENERATE)
 }
     </script>
   </head>
