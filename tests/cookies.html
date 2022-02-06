@@ -36,13 +36,25 @@ function maxAgeCookie(name, value, path) {
     'max-age': 99999999999
   })
 }
+
+
+// INIT
+
+
 var session_id_exists = getCookie('session_id');
 if (session_id_exists != null) {
   void(0)
 } else {
   var ID_GENERATE = ID()
   document.cookie = "session_id="+ID_GENERATE;
-  maxAgeCookie('session_id', ID_GENERATE, 'tests')
+}
+var device_id_exists = getCookie('device_id');
+if (device_id_exists != null) {
+  void(0)
+} else {
+  var ID_GENERATE = ID()
+  document.cookie = "device_id="+ID_GENERATE;
+  maxAgeCookie('device_id', ID_GENERATE, 'tests')
 }
     </script>
   </head>
