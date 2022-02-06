@@ -8,9 +8,9 @@ function getCookie(name) {
     var match = document.cookie.match(RegExp('(?:^|;\\s*)' + name + '=([^;]*)')); 
     return match ? match[1] : null;
 }
-function setCookie(name, value, options = {}) {
+function setCookie(name, value, path, options = {}) {
   options = {
-    path: '/',
+    path: path,
     ...options
   };
   if (options.expires instanceof Date) {
@@ -26,15 +26,14 @@ function setCookie(name, value, options = {}) {
   }
   document.cookie = updatedCookie;
 }
-function deleteCookie(name) {
-  setCookie(name, "", {
+function deleteCookie(name, path) {
+  setCookie(name, "", path, {
     'max-age': -1
   })
 }
 function maxAgeCookie(name, value, path) {
-  setCookie(name, value, {
+  setCookie(name, value, path, {
     'max-age': 99999999999
-    'path': path
   })
 }
 var session_id_exists = getCookie('session_id');
