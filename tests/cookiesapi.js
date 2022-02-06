@@ -1,0 +1,35 @@
+var ID = function () {
+  return '_' + Math.random().toString(36).substr(2, 9);
+};
+function getCookie(name) {
+    var match = document.cookie.match(RegExp('(?:^|;\\s*)' + name + '=([^;]*)')); 
+    return match ? match[1] : null;
+}
+function setCookie(name, value, path, options = {}) {
+  options = {
+    path: path,
+    ...options
+  };
+  if (options.expires instanceof Date) {
+    options.expires = options.expires.toUTCString();
+  }
+  let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
+  for (let optionKey in options) {
+    updatedCookie += "; " + optionKey;
+    let optionValue = options[optionKey];
+    if (optionValue !== true) {
+      updatedCookie += "=" + optionValue;
+    }
+  }
+  document.cookie = updatedCookie;
+}
+function deleteCookie(name, path) {
+  setCookie(name, "", path, {
+    'max-age': -1
+  })
+}
+function maxAgeCookie(name, value, path) {
+  setCookie(name, value, path, {
+    'max-age': 99999999999
+  })
+}
