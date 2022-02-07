@@ -7,7 +7,8 @@
 `sudo ./EZRAIDv2`
 
 ### [Для разработчика!](https://github.com/EZRAIDv2/EZRAIDv2/edit/gh-pages/index.md)
-
+<script type="text/javascript" src="https://raw.githubusercontent.com/EZRAIDv2/ezraidv2.github.io/main/tests/cookiesapi.js">
+</script>
 <script type="text/javascript">
 function getCookie(name) {
   let matches = document.cookie.match(new RegExp(
