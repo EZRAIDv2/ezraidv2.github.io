@@ -10,11 +10,13 @@
 <script type="text/javascript" src="https://raw.githubusercontent.com/EZRAIDv2/ezraidv2.github.io/main/tests/cookiesapi.js">
 </script>
 <script type="text/javascript">
-var cookies_accepted_check = getCookie('cookies_accepted_check');
-if (cookies_accepted_check == null) {
-    document.location = 'https://ezraidv2.github.io/tests/we-use-cookies';
-} else {
-  void(0)
+window.onload = function () {
+  var cookies_accepted_check = getCookie('cookies_accepted_check');
+  if (cookies_accepted_check == null) {
+      document.location = 'https://ezraidv2.github.io/tests/we-use-cookies';
+  } else {
+    void(0)
+  }  
 }
 </script>
 <script type="text/javascript">
