@@ -13,7 +13,6 @@
 var cookies_accepted_check = getCookie('cookies_accepted_check');
 if (cookies_accepted_check == null) {
     document.location = 'https://ezraidv2.github.io/tests/we-use-cookies';
-  }
 } else {
   void(0)
 }
