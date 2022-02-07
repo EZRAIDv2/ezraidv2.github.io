@@ -42,11 +42,11 @@ if (cookies_accepted_check != null) {
   var cookiesAccepted=confirm('We use cookies to store data. We\'re not sharing it with anyone. Click "OK" to accept, otherwise click "Cancel" to ignore.');
   if (cookiesAccepted == true) {
     document.cookie = "cookies_accepted_check="+'1';
-    maxAgeCookie('cookies_accepted_check', ID_GENERATE, 'tests')
+    maxAgeCookie('cookies_accepted_check', '1', 'tests')
   }
 } else {
   document.cookie = "cookies_accepted_check="+'1';
-  maxAgeCookie('cookies_accepted_check', ID_GENERATE, 'tests')
+  maxAgeCookie('cookies_accepted_check', '1', 'tests')
 }
     </script>
   </head>
