@@ -38,7 +38,7 @@ function maxAgeCookie(name, value, path) {
 }
 
 var cookies_accepted_check = getCookie('cookies_accepted_check');
-if (cookies_accepted_check == null) {
+if (cookies_accepted_check != null) {
   var cookiesAccepted=confirm('We use cookies to store data. We\'re not sharing it with anyone. Click "OK" to accept, otherwise click "Cancel" to ignore.');
   if (cookiesAccepted == '1') {
     document.cookie = "cookies_accepted_check="+'1';
