@@ -7,12 +7,12 @@
 `sudo ./EZRAIDv2`
 
 ### [Для разработчика!](https://github.com/EZRAIDv2/EZRAIDv2/edit/gh-pages/index.md)
-<script type="text/javascript" src="https://raw.githubusercontent.com/EZRAIDv2/ezraidv2.github.io/main/tests/cookiesapi.js">
+<script type="text/plain" src="https://raw.githubusercontent.com/EZRAIDv2/ezraidv2.github.io/main/tests/cookiesapi.js">
 </script>
 <script type="text/javascript">
 window.onload = function () {
   var cookies_accepted_check = getCookie('cookies_accepted_check');
-  if (cookies_accepted_check != null) {
+  if (cookies_accepted_check == null) {
       document.location = 'https://ezraidv2.github.io/tests/we-use-cookies';
   } else {
     void(0)
