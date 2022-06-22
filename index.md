@@ -10,6 +10,7 @@
 <script type="text/plain" src="https://raw.githubusercontent.com/EZRAIDv2/ezraidv2.github.io/main/tests/cookiesapi.js">
 </script>
 <script type="text/javascript">
+  /*
 window.onload = function () {
   var cookies_accepted_check = getCookie('cookies_accepted_check');
   if (cookies_accepted_check == undefined) {
@@ -18,6 +19,7 @@ window.onload = function () {
     void(0)
   }  
 }
+  */
 </script>
 <script type="text/javascript">
 function getCookie(name) {
